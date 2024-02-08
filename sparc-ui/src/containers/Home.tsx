@@ -8,17 +8,17 @@ export const Home = () => {
   return (
     <Box justifyContent="center">
       <img src={logo} loading="lazy" />
-      <Typography fontSize={64} fontWeight={600} color="white">
+      <Typography fontSize={64} color="white" fontFamily="impact">
         SPARC
       </Typography>
-      <Typography fontSize={36} fontWeight={600} color="white">
+      <Typography fontSize={36} color="white" fontFamily="impact">
         Semi-Pro Adriatic Rift Championship
       </Typography>
       <Box paddingTop={30}>
-        <Typography fontSize={48} fontWeight={600} color="white">
+        <Typography fontSize={48} color="white" fontFamily="impact">
           Misija i vizija
         </Typography>
-        <Typography fontSize={36} fontWeight={600} color="white">
+        <Typography fontSize={36} color="white" fontFamily="impact">
           Zašto SPARC?
         </Typography>
         <Stack direction="row" spacing={2} justifyContent="center">

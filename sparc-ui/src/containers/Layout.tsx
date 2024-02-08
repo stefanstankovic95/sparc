@@ -7,12 +7,22 @@ export const Layout = (props: any) => {
       <Box display="flex" justifyContent="space-evenly" paddingTop={5}>
         <Box>
           <Link
+            href="/"
+            underline="none"
+            color="white"
+            fontSize={24}
+            fontFamily="impact"
+          >
+            {"Sparc"}
+          </Link>
+        </Box>
+        <Box>
+          <Link
             href="/leageue-statistic"
             underline="none"
             color="white"
             fontSize={24}
-            fontFamily="anton,sans-serif"
-            fontWeight={700}
+            fontFamily="impact"
           >
             {"Statistika Lige"}
           </Link>
@@ -23,8 +33,7 @@ export const Layout = (props: any) => {
             underline="none"
             color="white"
             fontSize={24}
-            fontFamily="anton,sans-serif"
-            fontWeight={700}
+            fontFamily="impact"
           >
             {"Timovi"}
           </Link>
@@ -35,8 +44,7 @@ export const Layout = (props: any) => {
             underline="none"
             color="white"
             fontSize={24}
-            fontFamily="anton,sans-serif"
-            fontWeight={700}
+            fontFamily="impact"
           >
             {"Raspored"}
           </Link>
@@ -47,8 +55,7 @@ export const Layout = (props: any) => {
             underline="none"
             color="white"
             fontSize={24}
-            fontFamily="anton,sans-serif"
-            fontWeight={700}
+            fontFamily="impact"
           >
             {"Više o SPARC-u"}
           </Link>
