@@ -1,0 +1,111 @@
+{
+  "streamed": [
+    {
+      "left": "Peak5",
+      "right": "Alpha Males Only",
+      "time": "19:00"
+    },
+    {
+      "left": "RES Esports",
+      "right": "Timmejtovi",
+      "time": "20:15"
+    },
+    {
+      "left": "Random Fights",
+      "right": "Potez",
+      "time": "21:30"
+    }
+  ],
+  "firstRound": {
+    "name": "Kolo 3",
+    "time": "18:00",
+    "matches": [
+      {
+        "left": "EVIL INSIDE",
+        "right": "Random Fights"
+      },
+      {
+        "left": "Masni Sapunjari",
+        "right": "Renault Clio"
+      },
+      {
+        "left": "Magical Journey",
+        "right": "RES Esports"
+      },
+      {
+        "left": "Cement",
+        "right": "Peak5"
+      },
+      {
+        "left": "Malo Niško",
+        "right": "Peak5"
+      },
+      {
+        "left": "Pet Ludaka",
+        "right": "Alpha Males Only"
+      },
+      {
+        "left": "Avengersi Okupajte Se",
+        "right": "Timmejtovi"
+      },
+      {
+        "left": "Looksmaxers",
+        "right": "MOGG Central"
+      },
+      {
+        "left": "Braća Diaz",
+        "right": "Potez"
+      },
+      {
+        "left": "Šanker Summoners",
+        "right": "CLAW"
+      }
+    ]
+  },
+  "secondRound": {
+    "name": "Kolo 4",
+    "time": "19:00",
+    "matches": [
+      {
+        "left": "EVIL INSIDE",
+        "right": "eClips"
+      },
+      {
+        "left": "Peak5",
+        "right": "Alpha Males Only"
+      },
+      {
+        "left": "RES Esports",
+        "right": "Timmejtovi"
+      },
+      {
+        "left": "Renault Clio",
+        "right": "MOGG Central"
+      },
+      {
+        "left": "Random Fights",
+        "right": "Potez"
+      },
+      {
+        "left": "Masni Sapunjari",
+        "right": "CLAW"
+      },
+      {
+        "left": "Magical Journey",
+        "right": "Šanker Summoners"
+      },
+      {
+        "left": "Cement",
+        "right": "Braća Diaz"
+      },
+      {
+        "left": "Malo Niško",
+        "right": "Looksmaxers"
+      },
+      {
+        "left": "Pet Ludaka",
+        "right": "Avengersi Okupajte Se"
+      }
+    ]
+  }
+}
