@@ -57,7 +57,7 @@ export const Schedule = () => {
                     fontFamily="impact"
                     style={{ animationDelay: "2.5s", opacity: "75%" }}
                   >
-                    {match.left}
+                    {match.right}
                   </Typography>
                 </TimelineContent>
               </TimelineItem>
