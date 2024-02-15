@@ -1,3 +1,5 @@
+import { Box } from "@mui/system";
+
 export const LeagueStatistic = () => {
   return (
       <Box justifyContent="center">
