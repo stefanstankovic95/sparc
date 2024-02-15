@@ -21,7 +21,7 @@ export const Layout = (props: any) => {
         </Box>
         <Box>
           <Link
-            href="/leageue-statistic"
+            href="/league-statistic"
             underline="none"
             color="white"
             fontSize={24}

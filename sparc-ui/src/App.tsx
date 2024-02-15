@@ -21,10 +21,10 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route index element={<Home />} />
-            <Route path="league-statistic" element={<LeagueStatistic />} />
             <Route path="teams" element={<Teams />} />
             <Route path="schedule" element={<Schedule />} />
             <Route path="about" element={<About />} />
+            <Route path="league-statistic" element={<LeagueStatistic />} />
           </Routes>
         </BrowserRouter>
       </Layout>
