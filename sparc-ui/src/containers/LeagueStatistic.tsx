@@ -3,7 +3,7 @@ import { Box } from "@mui/system";
 export const LeagueStatistic = () => {
   return (
       <Box justifyContent="center">
-        <iframe title="SparcReport" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZjQyYjRkNDMtZDU3Ny00NWE4LWI2YjUtMGRmMWE0NTEzNDU0IiwidCI6IjMxODY4OTk5LWE5NTUtNGNiNi04N2E3LTJmZTYwMDk3Y2IwNyIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe title="SparcReport" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZjQyYjRkNDMtZDU3Ny00NWE4LWI2YjUtMGRmMWE0NTEzNDU0IiwidCI6IjMxODY4OTk5LWE5NTUtNGNiNi04N2E3LTJmZTYwMDk3Y2IwNyIsImMiOjl9" frameborder="0" allowFullScreen={true}></iframe>
       </Box>
     );
 };
