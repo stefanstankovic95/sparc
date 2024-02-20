@@ -20,6 +20,11 @@ code {
   animation: burn 1.5s linear infinite alternate;
 }
 
+.bi-report {
+  height: 80vh;
+  width: 70%;
+}
+
 @keyframes burn {
   from {
     text-shadow: -0.1em 0 0.3em #fefcc9, 0.1em -0.1em 0.3em #feec85,

@@ -6,15 +6,22 @@ import { Teams } from "./containers/Teams";
 import { Schedule } from "./containers/Schedule";
 import { About } from "./containers/About";
 import { Home } from "./containers/Home";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    document.title = "SPARC";
+  }, []);
+
   return (
     <div
       className="App"
       style={{
         background: `url(./background.gif)`,
         backgroundSize: "cover",
-        height: "100vh",
+        flex: 1,
+        height: "100%",
+        minHeight: "100vh",
       }}
     >
       <Layout>
