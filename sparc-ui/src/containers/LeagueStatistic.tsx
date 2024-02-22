@@ -25,7 +25,7 @@ export const LeagueStatistic = () => {
           title="SparcReport"
           height={780}
           width={1280}
-          src="https://app.powerbi.com/view?r=eyJrIjoiZjQyYjRkNDMtZDU3Ny00NWE4LWI2YjUtMGRmMWE0NTEzNDU0IiwidCI6IjMxODY4OTk5LWE5NTUtNGNiNi04N2E3LTJmZTYwMDk3Y2IwNyIsImMiOjl9"
+          src="https://app.powerbi.com/view?r=eyJrIjoiOGRmMzc1NWMtMDY3Mi00MzVhLWIxZDMtNDYzMDI2NGRlZjEwIiwidCI6IjMxODY4OTk5LWE5NTUtNGNiNi04N2E3LTJmZTYwMDk3Y2IwNyIsImMiOjl9"
           allowFullScreen={true}
           onLoad={() => {
             console.log("stefan loaded");
