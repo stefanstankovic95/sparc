@@ -4,7 +4,6 @@ import { LeagueStatistic } from "./containers/LeagueStatistic";
 import { Layout } from "./containers/Layout";
 import { Teams } from "./containers/Teams";
 import { Schedule } from "./containers/Schedule";
-import { About } from "./containers/About";
 import { Home } from "./containers/Home";
 import { useEffect } from "react";
 import tiktok from "./link-icons/tiktok.png";
@@ -63,7 +62,6 @@ function App() {
             <Route index element={<Home />} />
             <Route path="teams" element={<Teams />} />
             <Route path="schedule" element={<Schedule />} />
-            <Route path="about" element={<About />} />
             <Route path="league-statistic" element={<LeagueStatistic />} />
           </Routes>
         </BrowserRouter>
@@ -84,6 +82,7 @@ function App() {
             justifyContent="center"
           >
             <img
+              className="social-media-icon"
               style={{ marginTop: 2 }}
               src={instagram}
               loading="lazy"
@@ -91,22 +90,34 @@ function App() {
               width={45}
               onClick={handleInstagramClick}
             />
+            <div className="social-media-divider"></div>
             <img
+              className="social-media-icon"
               src={tiktok}
               loading="lazy"
               height={50}
               width={50}
               onClick={handleTiktokClick}
             />
+            <div
+              style={{ marginRight: 13, marginLeft: 7 }}
+              className="social-media-divider"
+            ></div>
             <img
+              className="social-media-icon"
               style={{ marginTop: -4 }}
               src={youtube}
               loading="lazy"
               height={55}
-              width={45}
+              width={50}
               onClick={handleYoutubeClick}
             />
+            <div
+              style={{ marginRight: 10 }}
+              className="social-media-divider"
+            ></div>
             <img
+              className="social-media-icon"
               style={{ marginTop: 5 }}
               src={email}
               loading="lazy"

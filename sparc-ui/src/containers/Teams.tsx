@@ -19,7 +19,7 @@ export const Teams = () => {
       <Grid container spacing={2} marginTop={10}>
         {images.map((image) => (
           <Grid item xs={3}>
-            <img src={image} loading="lazy" height={170} width={150} />
+            <img src={image} loading="lazy" height={186} width={186} />
           </Grid>
         ))}
       </Grid>

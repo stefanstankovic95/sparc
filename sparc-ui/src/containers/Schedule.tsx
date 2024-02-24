@@ -23,11 +23,9 @@ export const Schedule = () => {
               <TimelineItem>
                 <TimelineOppositeContent>
                   <Typography
-                    className="fire"
                     fontSize={44}
                     color="burlywood"
                     fontFamily="impact"
-                    style={{ animationDelay: "3s", opacity: "90%" }}
                   >
                     {match.left}
                   </Typography>
@@ -50,13 +48,7 @@ export const Schedule = () => {
                   </TimelineDot>
                 </TimelineSeparator>
                 <TimelineContent>
-                  <Typography
-                    className="fire"
-                    fontSize={44}
-                    color="coral"
-                    fontFamily="impact"
-                    style={{ animationDelay: "2.5s", opacity: "75%" }}
-                  >
+                  <Typography fontSize={44} color="coral" fontFamily="impact">
                     {match.right}
                   </Typography>
                 </TimelineContent>

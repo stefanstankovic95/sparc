@@ -25,6 +25,30 @@ code {
   width: 70%;
 }
 
+.social-media-icon {
+  margin-left: 0px !important;
+}
+
+.social-media-icon:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.social-media-divider {
+  width: 28px;
+  height: 28px;
+  position: relative;
+}
+
+.social-media-divider:after {
+  content: "";
+  position: absolute;
+  border-top: 1px solid grey;
+  width: 50px;
+  transform: rotate(115deg);
+  transform-origin: 10% 400%;
+}
+
 @keyframes burn {
   from {
     text-shadow: -0.1em 0 0.3em #fefcc9, 0.1em -0.1em 0.3em #feec85,
