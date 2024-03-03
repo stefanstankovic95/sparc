@@ -9,8 +9,11 @@ import {
   TimelineOppositeContent,
   TimelineSeparator,
 } from "@mui/lab";
+import { usePageTracking } from "../hooks/use-page-tracking";
 
 export const Schedule = () => {
+  usePageTracking();
+
   return (
     <Box>
       <Grid container>

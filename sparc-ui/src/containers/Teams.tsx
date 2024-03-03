@@ -1,4 +1,5 @@
 import { Box, Grid } from "@mui/material";
+import { usePageTracking } from "../hooks/use-page-tracking";
 
 const cache = {};
 
@@ -13,7 +14,8 @@ const images = Object.entries(cache).map(
 ) as Array<string>;
 
 export const Teams = () => {
-  console.log("images", images, Object.entries(cache));
+  usePageTracking();
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2} marginTop={10}>
