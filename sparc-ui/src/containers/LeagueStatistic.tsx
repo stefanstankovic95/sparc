@@ -8,7 +8,8 @@ export const LeagueStatistic = () => {
       style={{
         display: "flex",
         justifyContent: "center",
-        marginTop: 200,
+        marginTop: 100,
+        marginBottom: 100,
       }}
     >
       <div

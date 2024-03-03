@@ -1,56 +1,58 @@
 import Link from "@mui/material/Link";
 import { Box } from "@mui/system";
-import logo from "../logo.png";
+import { AppBar, Button, Menu, MenuItem, Toolbar } from "@mui/material";
+import { useState } from "react";
+
+const StatisticMenu = () => {
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  return (
+    <Box>
+      <Button onMouseEnter={handleClick}>League Statistics</Button>
+      <Menu
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+        slotProps={{ paper: { onMouseLeave: handleClose } }}
+      >
+        <MenuItem onClick={handleClose}>
+          <Button href="/statistics">Standings</Button>
+        </MenuItem>
+        <MenuItem href="/statistics/leaderboard" onClick={handleClose}>
+          Leaderboard
+        </MenuItem>
+        <MenuItem href="/statistics/team" onClick={handleClose}>
+          Team Statistics
+        </MenuItem>
+        <MenuItem href="/statistics/player" onClick={handleClose}>
+          Player Statistics
+        </MenuItem>
+        <MenuItem href="/statistics/playerComparison" onClick={handleClose}>
+          Player Comparison
+        </MenuItem>
+      </Menu>
+    </Box>
+  );
+};
 
 export const Layout = (props: any) => {
   return (
     <Box>
-      <Box display="flex" justifyContent="space-evenly" paddingTop={5}>
-        <Box>
-          <Link
-            href="/"
-            underline="none"
-            color="white"
-            fontSize={24}
-            fontFamily="impact"
-          >
-            {"Sparc"}
-          </Link>
-        </Box>
-        <Box>
-          <Link
-            href="/league-statistic"
-            underline="none"
-            color="white"
-            fontSize={24}
-            fontFamily="impact"
-          >
-            {"Statistika Lige"}
-          </Link>
-        </Box>
-        <Box>
-          <Link
-            href="/teams"
-            underline="none"
-            color="white"
-            fontSize={24}
-            fontFamily="impact"
-          >
-            {"Timovi"}
-          </Link>
-        </Box>
-        <Box>
-          <Link
-            href="/schedule"
-            underline="none"
-            color="white"
-            fontSize={24}
-            fontFamily="impact"
-          >
-            {"Raspored"}
-          </Link>
-        </Box>
-      </Box>
+      <AppBar position="sticky" color="success">
+        <Toolbar>
+          <Button href="/">{"Sparc"}</Button>
+          <StatisticMenu />
+          <Button href="/teams">{"Teams"}</Button>
+          <Button href="/schedule">{"Schedule"}</Button>
+        </Toolbar>
+      </AppBar>
       {props.children}
     </Box>
   );

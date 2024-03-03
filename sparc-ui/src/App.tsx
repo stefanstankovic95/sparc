@@ -11,10 +11,13 @@ import instagram from "./link-icons/instagram.png";
 import email from "./link-icons/email.png";
 import youtube from "./link-icons/youtube.png";
 import { Box, Divider, Stack } from "@mui/material";
+import { initializeTagManager } from "./gtm";
+import { usePageTracking } from "./hooks/use-page-tracking";
 
 function App() {
   useEffect(() => {
     document.title = "SPARC";
+    initializeTagManager();
   }, []);
 
   const handleYoutubeClick = () => {
@@ -46,7 +49,7 @@ function App() {
     <div
       className="App"
       style={{
-        background: `url(./background.gif)`,
+        background: `url(./firespark.gif)`,
         backgroundSize: "cover",
         flex: 1,
         height: "100%",
@@ -62,7 +65,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="teams" element={<Teams />} />
             <Route path="schedule" element={<Schedule />} />
-            <Route path="league-statistic" element={<LeagueStatistic />} />
+            <Route path="statistics" element={<LeagueStatistic />} />
           </Routes>
         </BrowserRouter>
       </Layout>
