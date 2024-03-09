@@ -49,6 +49,12 @@ code {
   transform-origin: 10% 400%;
 }
 
+.header-links {
+  color: white !important;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 @keyframes burn {
   from {
     text-shadow: -0.1em 0 0.3em #fefcc9, 0.1em -0.1em 0.3em #feec85,

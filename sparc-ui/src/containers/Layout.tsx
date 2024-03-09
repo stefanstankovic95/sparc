@@ -6,13 +6,31 @@ export const Layout = (props: any) => {
     <Box>
       <AppBar style={{ backgroundColor: "black" }} position="sticky">
         <Toolbar style={{ justifyContent: "space-around" }}>
-          <Button href="/">{"Sparc"}</Button>
-          <Button href="/statistics">{"League Statistics"}</Button>
-          <Button href="/teams">{"Teams"}</Button>
-          <Button href="/schedule">{"Schedule"}</Button>
+          <Button className="header-links" href="/sparc">
+            {"Sparc"}
+          </Button>
+          <Button className="header-links" href="/sparc/statistics">
+            {"League Statistics"}
+          </Button>
+          <Button className="header-links" href="/sparc/teams">
+            {"Teams"}
+          </Button>
+          <Button disabled className="header-links" href="/sparc/schedule">
+            {"Schedule"}
+          </Button>
         </Toolbar>
       </AppBar>
-      {props.children}
+      <div
+        style={{
+          background: `url(../background.png)`,
+          backgroundSize: "contain",
+          flex: 1,
+          display: "flex",
+          minHeight: "calc(100vh - 132px)",
+        }}
+      >
+        {props.children}
+      </div>
     </Box>
   );
 };

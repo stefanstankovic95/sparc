@@ -17,7 +17,7 @@ export const Teams = () => {
   usePageTracking();
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, height: "100%" }}>
       <Grid container spacing={2} marginTop={10}>
         {images.map((image) => (
           <Grid item xs={3}>

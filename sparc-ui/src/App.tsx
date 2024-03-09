@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { LeagueStatistic } from "./containers/LeagueStatistic";
 import { Layout } from "./containers/Layout";
 import { Teams } from "./containers/Teams";
@@ -49,8 +49,6 @@ function App() {
     <div
       className="App"
       style={{
-        background: `url(./firespark.gif)`,
-        backgroundSize: "cover",
         flex: 1,
         height: "100%",
         minHeight: "100vh",
@@ -62,10 +60,11 @@ function App() {
       <Layout>
         <BrowserRouter>
           <Routes>
-            <Route index element={<Home />} />
-            <Route path="teams" element={<Teams />} />
-            <Route path="schedule" element={<Schedule />} />
-            <Route path="statistics" element={<LeagueStatistic />} />
+            <Route index path="" element={<Navigate to="sparc" />} />
+            <Route path="sparc" element={<Home />} />
+            <Route path="sparc/teams" element={<Teams />} />
+            <Route path="sparc/schedule" element={<Schedule />} />
+            <Route path="sparc/statistics" element={<LeagueStatistic />} />
           </Routes>
         </BrowserRouter>
       </Layout>

@@ -15,7 +15,7 @@ export const Schedule = () => {
   usePageTracking();
 
   return (
-    <Box>
+    <Box width="100%">
       <Grid container>
         <Grid item xs={12} paddingTop={10}>
           <Typography fontSize={36} color="khaki" fontFamily="impact">
