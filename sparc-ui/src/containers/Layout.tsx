@@ -23,7 +23,7 @@ export const Layout = (props: any) => {
       <div
         style={{
           background: `url(../background.png)`,
-          backgroundSize: "contain",
+          backgroundSize: "100% 100%",
           flex: 1,
           display: "flex",
           minHeight: "calc(100vh - 132px)",
