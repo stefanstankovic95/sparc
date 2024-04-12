@@ -1,6 +1,5 @@
 import { Box } from "@mui/system";
 import logo from "../logo.png";
-import { Typography } from "@mui/material";
 import { usePageTracking } from "../hooks/use-page-tracking";
 
 export const Home = () => {

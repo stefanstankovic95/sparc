@@ -15,8 +15,8 @@ export const Layout = (props: any) => {
           <Button className="header-links" href="/sparc/teams">
             {"Teams"}
           </Button>
-          <Button disabled className="header-links" href="/sparc/schedule">
-            {"Schedule"}
+          <Button className="header-links" href="/sparc/schedule">
+            {"Play-In"}
           </Button>
         </Toolbar>
       </AppBar>
