@@ -12,7 +12,7 @@ export const Schedule = () => {
       width="100vw"
       justifyContent="center"
     >
-      <img src={playIn} loading="lazy" style={{ objectFit: "contain" }} />
+      <img src={playIn} loading="lazy" style={{ objectFit: "contain", maxWidth: "100%", maxHeight: "100%" }} />
     </Box>
   );
 };
