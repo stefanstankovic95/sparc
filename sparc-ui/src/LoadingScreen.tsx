@@ -7,7 +7,7 @@ const LoadingScreen: React.FC = () => {
     useEffect(() => {
       const timer = setTimeout(() => {
         setIsLoading(false);
-      }, 5000); // 5 sekunde, promite ako hocete vise/manje.
+      }, 5000); // 5 sekunde, promenite ako hocete vise/manje.
   
       return () => clearTimeout(timer);
     }, []);
