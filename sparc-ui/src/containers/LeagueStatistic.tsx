@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { usePageTracking } from "../hooks/use-page-tracking";
-import LoadingScreen from "../LoadingScreen";
+
 
 
 export const LeagueStatistic = () => {
@@ -9,8 +9,6 @@ export const LeagueStatistic = () => {
 
 
   return (
-    <>
-    <LoadingScreen/>
     <div
       style={{
         display: "flex",
@@ -40,6 +38,5 @@ export const LeagueStatistic = () => {
         ></iframe>
       </div>
     </div>
-    </>
   );
 };
