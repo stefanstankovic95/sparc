@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import { usePageTracking } from "../hooks/use-page-tracking";
-import playIn from "../files/playIn.png";
+import playOff from "../files/playoff.png";
 
 export const Schedule = () => {
   usePageTracking();
@@ -12,7 +12,11 @@ export const Schedule = () => {
       width="100vw"
       justifyContent="center"
     >
-      <img src={playIn} loading="lazy" style={{ objectFit: "contain", maxWidth: "100%", maxHeight: "100%" }} />
+      <img
+        src={playOff}
+        loading="lazy"
+        style={{ objectFit: "contain", maxWidth: "100%", maxHeight: "100%" }}
+      />
     </Box>
   );
 };

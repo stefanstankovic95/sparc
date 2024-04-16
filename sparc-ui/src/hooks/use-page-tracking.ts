@@ -7,6 +7,12 @@ export const usePageTracking = () => {
   const location = useLocation();
 
   useEffect(() => {
+    const paths = window.location.pathname.split("/");
+    const page = paths[paths.length - 1];
+    document.title = page ? page : "home";
+  }, []);
+
+  useEffect(() => {
     // Trigger the first pageview manually
     TagManager.dataLayer({
       dataLayer: {
